@@ -1,0 +1,6 @@
+code.hljs { padding: 0; background: transparent; }
+pre code .key { color: #9cdcfe; }
+pre code .string { color: #ce9178; }
+pre code .number { color: #b5cea8; }
+pre code .boolean { color: #569cd6; }
+pre code .tag { color: #d7ba7d; }

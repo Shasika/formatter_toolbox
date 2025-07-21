@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Formatter Toolbox</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="highlight.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header"><h1>Formatter Toolbox</h1><span id="theme-toggle" class="theme-icon" title="Toggle theme">🌙</span></div>
+    <textarea id="input" placeholder="Paste JSON, XML, Base64, or JWT here..."></textarea>
+    <div class="buttons">
+      <button id="btn-json">Format JSON</button>
+      <button id="btn-xml">Format XML</button>
+      <button id="btn-base64">Decode Base64</button>
+      <button id="btn-jwt">Decode JWT</button>
+      <button id="btn-clear">Clear</button>
+    </div>
+
+    <div class="output-wrapper">
+      <button id="inline-copy">📋 Copy</button>
+      <pre><code id="output" class="hljs"></code></pre>
+    </div>
+
+    <div class="settings-toggle">
+      <button id="toggle-settings">⚙️ Settings</button>
+    </div>
+    <div id="settings-panel">
+      <div class="setting-group">
+        <label for="theme-color">Highlight Color:</label>
+        <input type="color" id="theme-color" value="#007bff" />
+      </div>
+      <div class="setting-group">
+        <label for="theme-mode">Theme:</label>
+        <select id="theme-mode">
+          <option value="auto">Auto</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <script src="highlight.js"></script>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

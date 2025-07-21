@@ -19,14 +19,11 @@ Formatter Toolbox is a simple yet powerful Chrome extension designed to help dev
 
 ## 🖼 Screenshots
 
-Light theme:
-![alt text](images/light-theme.png)
+![Light Theme](images/light-theme.png)
 
-Dark theme:
-![alt text](images/dark-theme.png)
+![Dark theme](images/dark-theme.png)
 
-Settings:
-![alt text](images/settings.png)
+![Settings](images/settings.png)
 
 ---
 

@@ -1,12 +1,22 @@
 {
   "manifest_version": 3,
   "name": "Formatter Toolbox",
-  "version": "1.0",
-    "description": "A toolbox for JSON, XML formatting and more. Developed by Shasika Madhushan.",
+  "version": "1.1",
+  "description": "A toolbox for JSON, XML formatting and more...",
+  "author": "Shasika Semasinghe",
+
   "action": {
     "default_popup": "popup.html"
   },
   "icons": {
     "48": "icons/icon.png"
+  },
+  "permissions": [],
+  "host_permissions": [],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "formatter-toolbox@shasika",
+      "strict_min_version": "109.0"
+    }
   }
 }

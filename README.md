@@ -10,10 +10,13 @@ Formatter Toolbox is a simple yet powerful Chrome extension designed to help dev
 
 - ✅ Format and beautify **JSON**
 - ✅ Format and highlight **XML**
-- ✅ Decode/Encode **Base64**
-- ✅ Convert and inspect **JWT tokens**
-- ✅ Toggle between **Light** and **Dark** themes
-- ✅ Clean, modern UI
+- ✅ Decode and display **Base64** data
+- ✅ Decode and inspect **JWT** tokens
+- ✅ Toggle between **Light**, **Dark**, and **Auto** themes
+- ✅ Customize highlight color using a visual **color picker**
+- ✅ Responsive and modern design
+- ✅ One-click copy output
+- ✅ Settings panel with live updates
 
 ---
 

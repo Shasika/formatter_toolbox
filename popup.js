@@ -154,19 +154,33 @@ document.addEventListener('DOMContentLoaded', () => {
     icon.textContent = document.documentElement.getAttribute('data-theme') === 'dark' ? '🌞' : '🌙';
   });
 
-  // 🎨 Highlight color picker
-  document.getElementById('theme-color').addEventListener('input', (e) => {
-    const color = e.target.value;
-    document.documentElement.style.setProperty('--button-bg', color);
-    document.documentElement.style.setProperty('--highlight-key', color);
-    document.documentElement.style.setProperty('--highlight-tag', color);
-  });
-
   // 📦 Initial theme (auto mode)
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   const defaultTheme = prefersDark ? 'dark' : 'light';
   document.documentElement.setAttribute('data-theme', defaultTheme);
   icon.textContent = defaultTheme === 'dark' ? '🌞' : '🌙';
   document.getElementById('theme-mode').value = defaultTheme;
-});
 
+
+  const pickr = Pickr.create({
+    el: '#color-picker',
+    theme: 'classic',
+    default: '#d3318f',
+    components: {
+      preview: true,
+      opacity: true,
+      hue: true,
+      interaction: {
+        input: true,
+        save: true,
+        clear: true
+      }
+    }
+  });
+
+  pickr.on('save', (color) => {
+    document.documentElement.style.setProperty('--button-bg', color.toHEXA().toString());
+    document.documentElement.style.setProperty('--highlight-key', color.toHEXA().toString());
+    document.documentElement.style.setProperty('--highlight-tag', color.toHEXA().toString());
+  });
+});

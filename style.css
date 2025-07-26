@@ -260,3 +260,28 @@ h1 {
 [data-theme="dark"] .string { color: var(--highlight-string) !important; }
 [data-theme="dark"] .number { color: #c586c0 !important; }
 [data-theme="dark"] .boolean { color: #569cd6 !important; }
+
+
+
+.setting-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.setting-group label {
+  min-width: 130px;
+  margin-right: 10px;
+  text-align: left;
+}
+
+.setting-group select,
+.setting-group #color-picker {
+  flex: 1;
+}
+
+#color-picker-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}

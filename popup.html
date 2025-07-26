@@ -5,7 +5,12 @@
   <title>Formatter Toolbox</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="highlight.css" />
+
+  <link rel="stylesheet" href="libs/pickr/themes/classic.min.css" />
+  <script src="libs/pickr/pickr.min.js"></script>
+
 </head>
+
 <body>
   <div class="container">
     <div class="header"><h1>Formatter Toolbox</h1><span id="theme-toggle" class="theme-icon" title="Toggle theme">🌙</span></div>
@@ -28,9 +33,12 @@
     </div>
     <div id="settings-panel">
       <div class="setting-group">
-        <label for="theme-color">Highlight Color:</label>
-        <input type="color" id="theme-color" value="#007bff" />
+        <label for="color-picker">Highlight Color:</label>
+        <div id="color-picker-wrapper">
+          <div id="color-picker"></div>
+        </div>
       </div>
+
       <div class="setting-group">
         <label for="theme-mode">Theme:</label>
         <select id="theme-mode">
@@ -44,6 +52,7 @@
 
   <script src="libs/purify.min.js"></script>
   <script src="highlight.js"></script>
-  <script type="module" src="popup.js"></script>
+  <script src="popup.js"></script>
 </body>
+
 </html>

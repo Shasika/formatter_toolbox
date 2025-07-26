@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Formatter Toolbox",
-  "version": "1.1",
+  "version": "1.2",
   "description": "A toolbox for JSON, XML formatting and more...",
   "author": "Shasika Semasinghe",
 
@@ -18,5 +18,14 @@
       "id": "formatter-toolbox@shasika",
       "strict_min_version": "109.0"
     }
+  },
+  "content_security_policy": {
+  "extension_pages": "script-src 'self'; object-src 'self';"
+},
+"web_accessible_resources": [
+  {
+    "resources": ["libs/pickr/**"],
+    "matches": ["<all_urls>"]
   }
+]
 }
